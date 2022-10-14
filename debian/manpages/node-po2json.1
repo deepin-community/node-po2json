@@ -1,0 +1,45 @@
+.TH 'NODE-PO2JSON' "1" "July 2016" "0.4.2" "User Commands"
+.SH NAME
+node-po2json \- convert po files to json (Javascript)
+.SH SYNOPSIS
+.B po2json
+\fI\,<input> <output> \/\fR[\fI\,options\/\fR]
+.SH DESCRIPTION
+input      input file
+output     output file
+.SH OPTIONS
+.TP
+\fB\-p\fR, \fB\-\-pretty\fR
+pretty\-print JSON
+.TP
+\fB\-F\fR, \fB\-\-fuzzy\fR
+include fuzzy messages
+.TP
+\fB\-f\fR, \fB\-\-format\fR
+output format, one of: raw, jed, jed1.x, mf (messageformat)  [raw]
+.TP
+\fB\-d\fR, \fB\-\-domain\fR
+domain  [messages]
+.TP
+\fB\-\-fallback\-to\-msgid\fR
+Use msgid if translation is missing (nplurals must match)
+.PP
+Usage: po2json <input> <output> [options]
+.PP
+input      input file
+output     output file
+.TP
+\fB\-p\fR, \fB\-\-pretty\fR
+pretty\-print JSON
+.TP
+\fB\-F\fR, \fB\-\-fuzzy\fR
+include fuzzy messages
+.TP
+\fB\-f\fR, \fB\-\-format\fR
+output format, one of: raw, jed, jed1.x, mf (messageformat)  [raw]
+.TP
+\fB\-d\fR, \fB\-\-domain\fR
+domain  [messages]
+.TP
+\fB\-\-fallback\-to\-msgid\fR
+Use msgid if translation is missing (nplurals must match)

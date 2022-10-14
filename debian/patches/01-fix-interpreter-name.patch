@@ -1,0 +1,17 @@
+Description: Fix the name of the interpreter to use nodejs
+ Inside Debian the correct interpreter name to use is nodejs.
+ Additionally fix the require path.
+Author: Mathias Behrle <mbehrle@debian.org>
+Bug-Debian: https://bugs.debian.org/829201
+
+--- node-po2json.orig/bin/po2json	2016-07-01 14:42:49.000000000 +0200
++++ node-po2json/bin/po2json	2016-07-13 14:05:17.317945510 +0200
+@@ -1,6 +1,6 @@
+-#!/usr/bin/env node
++#!/usr/bin/node
+ 
+-var po2json = require('../'),
++var po2json = require('po2json'),
+ 	fs = require('fs'),
+   assert = require('assert'),
+   argv = process.argv;
